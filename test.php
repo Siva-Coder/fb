@@ -5,10 +5,10 @@ header('Content-Type: application/json');
 $msg = [];
 
 try {
-    $url = $_POST['link'];
+    $url = $_POST['url'];
 
     if (empty($url)) {
-        throw new Exception('Please provide the URL', 1);
+        throw new Exception('Please provide the URL link', 1);
     }
 
     $context = [
